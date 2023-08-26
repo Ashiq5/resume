@@ -8,6 +8,7 @@
 *.toc
 *.gz
 *.pdf
+.idea
 
 ## Intermediate documents:
 *.dvi

@@ -49,6 +49,12 @@
 % Set font size and paper type
 \LoadClass[\papersize,\mainfontsize]{article}
 
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
 % Set document margins
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
 
@@ -65,6 +71,8 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 
 % Required for ifthenelse statements
 \usepackage{etoolbox}
+
+\RequirePackage{fontawesome}
 
 % Suppress page numbers
 \pagestyle{empty}
@@ -146,12 +154,20 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 % Address
 \makeatletter
 
-\newcommand\address[1]{\def\@address{#1}}
-\address{}
+\newcommand\info[1]{\def\@info{#1}}
+\info{}
 
 \newcommand\printaddress{
-  \small{\@address}
+  \small{\@info}
 }
+
+\newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{\normalfont #1}\hspace{0.5em}#2\hspace{2em}}}
+\newcommand{\linkedin}[2]{\printinfo{\linkedinsymbol}{\href{#1}{#2}}}
+\newcommand{\github}[2]{\printinfo{\githubsymbol}{\href{#1}{#2}}}
+\newcommand{\homepage}[2]{\printinfo{\homepagesymbol}{\href{#1}{#2}}}
+\newcommand{\githubsymbol}{\faGithub}
+\newcommand{\linkedinsymbol}{\faLinkedin}
+\newcommand{\homepagesymbol}{\faChain}
 
 \makeatother
 
@@ -162,10 +178,10 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 \name{}
 
 \newcommand\printname{
-  \typeout {kokoko}
+  %\typeout {kokoko}
   \typeout \spaceskip
   \spaceskip \namespaceskip \relax
-  \textbf{\LARGE\textls[110]{\textsc{\@name}}}
+  \textbf{\Large\textls[10]{\textsc{\@name}}}
 }
 
 \makeatother
@@ -185,8 +201,9 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 \makeatletter
 \newcommand\makeheader{
   \begin{center}
-    \begin{tabu} to 1\textwidth { X[l,m] X[2,c,m] X[r,m] }
-      \printaddress & \printname & \printcontacts \\
+    \begin{tabu} to 1\textwidth { X[2,c,m] }
+      \printname\\
+      \printaddress
     \end{tabu}
   \end{center}
   \vspace*{\afterheaderspace}

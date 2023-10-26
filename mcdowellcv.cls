@@ -56,7 +56,7 @@
             anchorcolor = blue]{hyperref}
 
 % Set document margins
-\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.3in]{geometry}
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.2in]{geometry}
 
 % Set font face
 \usepackage{fontspec}

@@ -26,6 +26,7 @@
 % For mathematical symbols
 \usepackage{amsmath}
 \usepackage{color}
+\usepackage{academicons}
 
 % Set applicant's personal data for header
 \name{Mohammad Ishtiaq Ashiq Khan}
@@ -36,7 +37,8 @@
 	\faMapMarker ~ Blacksburg, VA ~~
 	\href{https://ashiq5.github.io/}{\faHome ~ Homepage} ~~
 	\href{https://www.linkedin.com/in/ishtiaq-ashiq/}{\faLinkedin ~ LinkedIn} ~~
-	\href{https://github.com/Ashiq5}{\faGithub ~ GitHub}
+	\href{https://github.com/Ashiq5}{\faGithub ~ GitHub} ~~
+	\href{https://scholar.google.com/citations?user=X4jtTKkAAAAJ&hl=en}{\aiGoogleScholar ~ Google Scholar}
 }
 
 \begin{document}
@@ -48,14 +50,14 @@
 	\begin{cvsection}{Education}
 		\begin{cvsubsection}{Blacksburg, VA}{}{Jan 2021 - Dec 2025 (Expected)}
 			\begin{itemize}
-				\item Ph.D. in Computer Science and Applications at \textbf{Virginia Tech}%, CGPA: 3.85
+				\item Ph.D. in Computer Science and Applications at \textbf{Virginia Tech}; Available for internship during May '24 to Aug '24 %, CGPA: 3.85
 				%\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
 				%\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
 			\end{itemize}
 		\end{cvsubsection}
 		\begin{cvsubsection}{Dhaka, Bangladesh}{}{Jul 2014 - Oct 2018}
 			\begin{itemize}
-				\item B.Sc. in Computer Science at \textbf{Bangladesh University of Engineering and Technology (BUET)}, CGPA: 3.83.
+				\item B.Sc. in Computer Science at \textbf{Bangladesh University of Engineering and Technology (BUET)}, CGPA: 3.83
 				%\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
 				%\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
 			\end{itemize}
@@ -69,6 +71,10 @@
 				\item Conducting data-driven research aimed at enhancing management and security of \textbf{Email}, \textbf{DNS}, and \textbf{PKI}.
 				\item \textbf{Selected Publications}:
 				\begin{itemize}
+%					\item \textit{RoVista: Measuring and Analyzing the Route Origin Validation (ROV) in RPKI} in \textbf{ACM IMC} 2023. Authors: Weitong Li, Zhexiao Lin, \textbf{Md. Ishtiaq Ashiq}, Emile Aben, Romain Fontugne, Amreesh Phokeer, Taejoong Chung.  % (2nd author).
+%					\begin{itemize}
+%						\item Proposed a network measurement framework, RoVista, to determine the Route Origin Validation status at scale.
+%					\end{itemize}
 					\item \textit{You’ve Got Report: Measurement and Security Implications of DMARC Reporting} in \textbf{USENIX Security} 2023. Authors: \textbf{Md. Ishtiaq Ashiq}, Weitong Li, Tobias Fiebig, and Taejoong Chung. % (1st author).
 					\begin{itemize}
 						\item Analyzed the DMARC Reporting landscape longitudinally and empirically. Proposed a couple of DoS vulnerabilities
@@ -76,15 +82,15 @@
 					\end{itemize}
 					\item \textit{Measuring TTL Violation of DNS Resolvers in the Wild} in \textbf{PAM} 2023. Authors: Protick Bhowmick, \textbf{Md. Ishtiaq Ashiq}, Casey Deccio, and Taejoong Chung. % (2nd author).
 					\begin{itemize}
-						\item Designed the measurement infrastructure and backend APIs for the DNSSEC experiment using Docker and DRF.
+						\item Designed the measurement infrastructure and APIs for the DNSSEC experiment using Docker and Django Rest.
 					\end{itemize}
 					\item \textit{Under the Hood of DANE Mismanagement in SMTP} in \textbf{USENIX Security} 2022. Authors: Hyeonmin Lee, \textbf{Md. Ishtiaq Ashiq}, Moritz Muller, Roland van Rijswijk-Deij, Taekyoung Kwon, and Taejoong Chung. % (2nd author).
 					\begin{itemize}
-						\item Implemented an automated DANE configuration update scheme after key rollover in a popular email provider.
+						\item Automated the DANE key rollover scheme in a popular open-source email provider.
 					\end{itemize}
-%					\item \textit{RoVista: Measuring and Analyzing the Route Origin Validation (ROV) in RPKI} in \textbf{IMC} 2023. Authors: Weitong Li, Zhexiao Lin, \textbf{Md. Ishtiaq Ashiq}, Emile Aben, Romain Fontugne, Amreesh Phokeer, Taejoong Chung,  % (2nd author).
+%					\item \textit{Measurement and Analysis of Automated Certificate Reissuance} in \textbf{PAM} 2021. Authors: Olamide Omolola, Richard Roberts, \textbf{Md. Ishtiaq Ashiq}, Taejoong Chung, Dave Levin, and Alan Mislove.  % (2nd author).
 %					\begin{itemize}
-%						\item Proposed a network measurement framework, RoVista, to determine the Route Origin Validation status at scale.
+%						\item Examined SSL certificates issued by leading CAs to identify certificate misissuances based on CAA records.
 %					\end{itemize}
 				\end{itemize}
 				% \item Have multiple publications in top security and measurement venues like USENIX Security, IMC, and PAM.
@@ -144,6 +150,7 @@
 				\item \textbf{Revisiting the NXNS Attack} (2022). Developed a scalable technique to measure patches for the attack in local resolvers leveraging a proxy network, \href{https://drive.google.com/file/d/1kuTSIHuNUYxmIKbR6MsSg3znMqx55mCP/view}{[details]}.
 				\item \textbf{Transferability of Adversarial Training in Text Domain} (2021). Conducted a study to check transferability of adversarial training across popular adversarial frameworks. Framework: PyTorch, \href{https://github.com/Ashiq5/AdvTrainingExperiment}{[Link]}.
 				\item \textbf{DNSSEC Debugger} (2021). Analyzed historical DNSViz data to understand the challenges for DNS administrators while deploying and managing DNSSEC. Presented in \textbf{36th DNS-OARC Workshop}, \href{https://indico.dns-oarc.net/event/40/contributions/891/attachments/857/1555/DNS-OARC-final.pdf}{[Link]}.
+				% \item \textbf{How robust is SNARE-TANNER?} (2021). Devised and demonstrated vulnerabilities for attackers to bypass detection in SNARE-TANNER framework, \href{https://drive.google.com/file/d/1-FuDy-8xTE2TCRVV2RDuusnhAiLdgMeO/view?usp=sharing}{[Link]}.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}

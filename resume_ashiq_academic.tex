@@ -1,0 +1,169 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{academicons}
+
+% Set applicant's personal data for header
+\name{Mohammad Ishtiaq Ashiq Khan}
+% \address{1209E University Terrace \linebreak Blacksburg VA 24060}
+\info{
+	\faPhone ~ (540) 449-8267 ~~
+	\faAt ~ iashiq5@vt.edu ~~
+	\faMapMarker ~ Blacksburg, VA ~~
+	\href{https://ashiq5.github.io/}{\faHome ~ Homepage} ~~
+	\href{https://www.linkedin.com/in/ishtiaq-ashiq/}{\faLinkedin ~ LinkedIn} ~~
+	\href{https://github.com/Ashiq5}{\faGithub ~ GitHub} ~~
+	\href{https://scholar.google.com/citations?user=X4jtTKkAAAAJ&hl=en}{\aiGoogleScholar ~ Google Scholar}
+}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Blacksburg, VA}{}{Jan 2021 - Dec 2025 (Expected)}
+			\begin{itemize}
+				\item Ph.D. in Computer Science and Applications at \textbf{Virginia Tech}; Available for internship during May '24 to Aug '24 %, CGPA: 3.85
+				%\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
+				%\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Dhaka, Bangladesh}{}{Jul 2014 - Oct 2018}
+			\begin{itemize}
+				\item B.Sc. in Computer Science at \textbf{Bangladesh University of Engineering and Technology (BUET)}, CGPA: 3.83
+				%\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
+				%\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Selected Publications}
+		\begin{cvsubsection}{}{}{}
+			\begin{itemize}
+				\item \textit{RoVista: Measuring and Analyzing the Route Origin Validation in RPKI} in \textbf{Internet Measurement Conference 2023}.
+				\begin{itemize}
+					\item \textit{Authors:} Weitong Li, Zhexiao Lin, \textbf{Md. Ishtiaq Ashiq}, Emile Aben, Romain Fontugne, Amreesh Phokeer, Taejoong Chung.
+					\item Proposed a network measurement framework, RoVista, to determine the Route Origin Validation status at scale.
+				\end{itemize}
+				\item \textit{You’ve Got Report: Measurement and Security Implications of DMARC Reporting} in \textbf{USENIX Security 2023}.
+				\begin{itemize}
+					\item \textit{Authors:} \textbf{Md. Ishtiaq Ashiq}, Weitong Li, Tobias Fiebig, and Taejoong Chung.
+					\item Analyzed the DMARC Reporting landscape longitudinally and empirically. Proposed a couple of DoS vulnerabilities
+					in 3 major email providers with amplification factor over 1400x leveraging DMARC and TLS-RPT reporting.
+				\end{itemize}
+				\item \textit{Measuring TTL Violation of DNS Resolvers in the Wild} in \textbf{Passive and Active Measurement 2023}.
+				\begin{itemize}
+					\item \textit{Authors:} Protick Bhowmick, \textbf{Md. Ishtiaq Ashiq}, Casey Deccio, and Taejoong Chung.
+					\item Designed the measurement infrastructure and APIs for the DNSSEC experiment using Docker and Django Rest.
+				\end{itemize}
+				\item \textit{Under the Hood of DANE Mismanagement in SMTP} in \textbf{USENIX Security 2022}.
+				\begin{itemize}
+					\item \textit{Authors:} Hyeonmin Lee, \textbf{Md. Ishtiaq Ashiq}, Moritz Muller, Roland van Rijswijk-Deij, Taekyoung Kwon, and Taejoong Chung.
+					\item Automated the DANE key rollover scheme in a popular open-source email provider.
+				\end{itemize}
+				\item \textit{Measurement and Analysis of Automated Certificate Reissuance} in \textbf{Passive and Active Measurement 2021}.
+				\begin{itemize}
+					\item \textit{Authors:} Olamide Omolola, Richard Roberts, \textbf{Md. Ishtiaq Ashiq}, Taejoong Chung, Dave Levin, and Alan Mislove.  % (2nd author).
+					\item Examined SSL certificates issued by leading CAs to identify certificate misissuances based on CAA records.
+				\end{itemize}
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Selected Projects}
+		\begin{cvsubsection}{}{}{}
+			\begin{itemize}
+				\item \textbf{Revisiting the NXNS Attack} (2022). Developed a scalable technique to measure patches for the attack in local resolvers leveraging a proxy network, \href{https://drive.google.com/file/d/1kuTSIHuNUYxmIKbR6MsSg3znMqx55mCP/view}{[details]}.
+				\item \textbf{Transferability of Adversarial Training in Text Domain} (2021). Conducted a study to check transferability of adversarial training across popular adversarial frameworks. Framework: PyTorch, \href{https://github.com/Ashiq5/AdvTrainingExperiment}{[Link]}.
+				\item \textbf{DNSSEC Debugger} (2021). Analyzed historical DNSViz data to understand the challenges for DNS administrators while deploying and managing DNSSEC. Presented in \textbf{36th DNS-OARC Workshop}, \href{https://indico.dns-oarc.net/event/40/contributions/891/attachments/857/1555/DNS-OARC-final.pdf}{[Link]}.
+				\item \textbf{Robustness Analysis of a Web Honeypot} (2021). Demonstrated common web vulnerabilities in a popular web honeypot framework (SNARE-TANNER), \href{https://drive.google.com/file/d/1-FuDy-8xTE2TCRVV2RDuusnhAiLdgMeO/view?usp=sharing}{[details]}.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	% \newpage
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}
+			\begin{description}
+				\item[Languages] Python, Java, C++, C, JavaScript, HTML, CSS, Assembly (x86), familiar with R and Go
+				\item[Frameworks and Technologies] Django Rest, Tensorflow, Apache Spark, PyTorch, Node.js, Celery, Redis, AWS
+				\item[DBMS] Oracle SQL, PostgreSQL, MongoDB
+				% \item[VCS] GitHub, GitLab
+				\item[Tools] Docker, Vagrant, Hugo, etc. %  Munin, Nagios, queryperf, zDNS, BIND, Postfix
+			\end{description}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Experience}
+		\begin{cvsubsection}{Graduate Research Assistant}{Virginia Tech}{Jan 2021 - Present}
+			\begin{itemize}
+				% \item Curating experiments, designing APIs, and analyzing big data to identify mismanagements and vulnerabilities in applications of Public Key Infrastructure, DNS, and E-mail.
+				\item Conducting data-driven research aimed at enhancing management and security of \textbf{Email}, \textbf{DNS}, and \textbf{PKI}.
+				% \item Have multiple publications in top security and measurement venues like USENIX Security, IMC, and PAM.
+				% \item Stack: PySpark, MongoDB, PostgreSQL, Node.js, Docker, Django Rest, Redis, AWS, etc.
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Lecturer}{United International University}{Jul 2019 - Dec 2020}
+			\begin{itemize}
+				\item Taught Network Security, Data Structure, Object-Oriented Programming, etc. undergraduate courses.
+			\end{itemize}
+		\end{cvsubsection}
+		\newpage
+		\begin{cvsubsection}{Full Stack Software Engineer}{InfoSapex Limited}{Nov 2018 - Jul 2019}
+			\begin{itemize}
+				\item Successfully released a Procurement Management System in production with over 50\% contribution.
+				% \item Designed a distributed database schema
+				\item Served as a technical point of contact with clients and carried out requirement analysis.
+				\item Significantly reduced server provisioning time by automating configurations with Puppet and recovery time by setting up monitoring service with Munin and Nagios.
+				%\item Managed server-side configuration, monitoring, and deployment, resulting in a 50\% reduction in mean time-to-recovery.
+				% \item Stack: Django Rest, Node.js, jQuery, HTML, CSS, Bootstrap, PostgreSQL, Celery
+			\end{itemize}
+		\end{cvsubsection}
+
+%		\begin{cvsubsection}{Software Engineer Intern}{Dingi Technologies Limited}{Mar 2018 - Aug 2018}
+%			\begin{itemize}
+%				\item Developed an interactive website for addressing feedbacks from users of Dingi's native mobile application.
+%			\end{itemize}
+%		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Additional Experience and Awards}
+		\begin{cvsubsection}{}{}{}
+			\begin{itemize}
+				\item \textbf{Instructor, Virginia Tech:} Taught Intermediate Software Design course during Summer 2023.
+    			\item \textbf{Open Source Contributions:} Contributed to 3 open-source projects: \href{https://github.com/mail-in-a-box/mailinabox}{Mail-in-a-Box}, \href{https://github.com/iredmail/iRedAPD}{iRedAPD}, and \href{https://github.com/QData/TextAttack}{TextAttack}.
+				\item Awarded \emph{University Merit List Scholarship}, and \emph{Dean's List Scholarship} during bachelor's.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	% \let\clearpage\relax
+\end{document}
+

@@ -1,0 +1,9 @@
+I am a third year Computer Science PhD student at Virginia Tech, currently involved in data-driven research aimed at enhancing the overall management and security of DNS, Public Key Infrastructure and Email.
+In one of my recent papers published at USENIX 2023, we detected a vulnerability in three major email providers including Google leveraging DMARC and SMTP TLS reporting.
+In another recent paper published at IMC 2023, we proposed a network measurement framework, RoVista, to determine the Route Origin Validation status, which is currently being used by multiple network operators.
+Overall, I have multiple first-authored and co-authored publications in top security and measurement venues like USENIX Security, IMC, and PAM highlighting my effective communication skills in collaborative research.
+I also have a few open source contributions and a year of software engineering experience at a reputed software firm in Bangladesh where I developed and designed a procurement management platform.
+I am looking for research/ software engineering internship opportunities for next year.
+So, if you have any suitable roles, I would be interested in pursuing that.
+%I am currently trying to investigate into vulnerabilities in different email sender authentication protocols that work over DNS.
+

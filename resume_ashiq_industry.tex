@@ -50,7 +50,7 @@
 	\begin{cvsection}{Education}
 		\begin{cvsubsection}{Blacksburg, VA}{}{Jan 2021 - Dec 2025 (Expected)}
 			\begin{itemize}
-				\item Ph.D. in Computer Science and Applications at \textbf{Virginia Tech}; Available for internship during May '24 to Aug '24 %, CGPA: 3.85
+				\item Ph.D. in Computer Science and Applications at \textbf{Virginia Tech}%; Available for internship during May '24 to Aug '24 %, CGPA: 3.85
 				%\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
 				%\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
 			\end{itemize}
@@ -65,6 +65,13 @@
 	\end{cvsection}
 
 	\begin{cvsection}{Experience}
+		\begin{cvsubsection}{Software Engineer Intern}{Meta}{May 2023 - Aug 2023}
+			\begin{itemize}
+				\item Developed a custom plugin for FB4A's in-app browser (Chromium) to aid in browser development and debugging
+				% \item Features: Show Chromium status, open URL on an external webview, show user metrics data, override
+				% user metrics, etc.
+			\end{itemize}
+		\end{cvsubsection}
 		\begin{cvsubsection}{Graduate Research Assistant}{Virginia Tech}{Jan 2021 - Present}
 			\begin{itemize}
 				% \item Curating experiments, designing APIs, and analyzing big data to identify mismanagements and vulnerabilities in applications of Public Key Infrastructure, DNS, and E-mail.
@@ -75,6 +82,11 @@
 %					\begin{itemize}
 %						\item Proposed a network measurement framework, RoVista, to determine the Route Origin Validation status at scale.
 %					\end{itemize}
+					\item \textit{SPF Beyond the Standard: Management and Operational Challenges in Practice and Practical Recommendations} in \textbf{USENIX Security} 2024. Authors: \textbf{Md. Ishtiaq Ashiq}, Weitong Li, Tobias Fiebig, and Taejoong Chung. % (1st author).
+					\begin{itemize}
+						\item Conducted a comprehensive study of the SPF extension, exploring the reasons behind prevalent
+						misconfigurations and unveiled potential attack vectors that can impede valid email reception.
+					\end{itemize}
 					\item \textit{You’ve Got Report: Measurement and Security Implications of DMARC Reporting} in \textbf{USENIX Security} 2023. Authors: \textbf{Md. Ishtiaq Ashiq}, Weitong Li, Tobias Fiebig, and Taejoong Chung. % (1st author).
 					\begin{itemize}
 						\item Analyzed the DMARC Reporting landscape longitudinally and empirically. Proposed a couple of DoS vulnerabilities
@@ -84,10 +96,10 @@
 					\begin{itemize}
 						\item Designed the measurement infrastructure and APIs for the DNSSEC experiment using Docker and Django Rest.
 					\end{itemize}
-					\item \textit{Under the Hood of DANE Mismanagement in SMTP} in \textbf{USENIX Security} 2022. Authors: Hyeonmin Lee, \textbf{Md. Ishtiaq Ashiq}, Moritz Muller, Roland van Rijswijk-Deij, Taekyoung Kwon, and Taejoong Chung. % (2nd author).
-					\begin{itemize}
-						\item Automated the DANE key rollover scheme in a popular open-source email provider.
-					\end{itemize}
+%					\item \textit{Under the Hood of DANE Mismanagement in SMTP} in \textbf{USENIX Security} 2022. Authors: Hyeonmin Lee, \textbf{Md. Ishtiaq Ashiq}, Moritz Muller, Roland van Rijswijk-Deij, Taekyoung Kwon, and Taejoong Chung. % (2nd author).
+%					\begin{itemize}
+%						\item Automated the DANE key rollover scheme in a popular open-source email provider.
+%					\end{itemize}
 %					\item \textit{Measurement and Analysis of Automated Certificate Reissuance} in \textbf{PAM} 2021. Authors: Olamide Omolola, Richard Roberts, \textbf{Md. Ishtiaq Ashiq}, Taejoong Chung, Dave Levin, and Alan Mislove.  % (2nd author).
 %					\begin{itemize}
 %						\item Examined SSL certificates issued by leading CAs to identify certificate misissuances based on CAA records.
@@ -115,21 +127,21 @@
 			\end{itemize}
 		\end{cvsubsection}
 		
-		\begin{cvsubsection}{Software Engineer Intern}{Dingi Technologies Limited}{Mar 2018 - Aug 2018}
-			\begin{itemize}
-				\item Developed an interactive website for addressing feedbacks from users of Dingi's native mobile application.
-			\end{itemize}
-		\end{cvsubsection}
+%		\begin{cvsubsection}{Software Engineer Intern}{Dingi Technologies Limited}{Mar 2018 - Aug 2018}
+%			\begin{itemize}
+%				\item Developed an interactive website for addressing feedbacks from users of Dingi's native mobile application.
+%			\end{itemize}
+%		\end{cvsubsection}
 	\end{cvsection}
 
 	\begin{cvsection}{Languages and Technologies}
 		\begin{cvsubsection}{}{}{}
 			\begin{description}
-				\item[Languages] Python, Java, C++, C, JavaScript, HTML, CSS, Assembly (x86), familiar with R and Go
-				\item[Frameworks and Technologies] Django Rest, Tensorflow, Apache Spark, PyTorch, Node.js, Celery, Redis, AWS
-				\item[DBMS] Oracle SQL, PostgreSQL, MongoDB
-				% \item[VCS] GitHub, GitLab
-				\item[Tools] Docker, Munin, Nagios, Vagrant, Hugo, dnsperf/ queryperf, zDNS, Grafana etc.
+				\item[Languages] Python, Java, C++, C, JavaScript, HTML, CSS, Assembly (x86), familiar with R, Go, Kotlin, TypeScript
+				\item[Frameworks and Technologies] Django Rest, Tensorflow, PySpark, PyTorch, Node.js, familiar with Android, React
+				\item[DBMS] Oracle SQL, PostgreSQL, MongoDB, Redis, Elasticsearch
+				\item[Tools] Docker, Vagrant, Hugo, Gulp, Buck, Celery, Grafana, AWS Services (S3, EC2) etc. %  Munin, Nagios, queryperf, zDNS, BIND, PowerDNS, Postfix, Exim
+				% \item[VCS] Git, Sapling
 			\end{description}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -147,7 +159,7 @@
 		% \vspace{-1ex}
 		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
-				\item \textbf{Revisiting the NXNS Attack} (2022). Developed a scalable technique to measure patches for the attack in local resolvers leveraging a proxy network, \href{https://drive.google.com/file/d/1kuTSIHuNUYxmIKbR6MsSg3znMqx55mCP/view}{[details]}.
+				% \item \textbf{Revisiting the NXNS Attack} (2022). Developed a scalable technique to measure patches for the attack in local resolvers leveraging a proxy network, \href{https://drive.google.com/file/d/1kuTSIHuNUYxmIKbR6MsSg3znMqx55mCP/view}{[details]}.
 				\item \textbf{Transferability of Adversarial Training in Text Domain} (2021). Conducted a study to check transferability of adversarial training across popular adversarial frameworks. Framework: PyTorch, \href{https://github.com/Ashiq5/AdvTrainingExperiment}{[Link]}.
 				\item \textbf{DNSSEC Debugger} (2021). Analyzed historical DNSViz data to understand the challenges for DNS administrators while deploying and managing DNSSEC. Presented in \textbf{36th DNS-OARC Workshop}, \href{https://indico.dns-oarc.net/event/40/contributions/891/attachments/857/1555/DNS-OARC-final.pdf}{[Link]}.
 				% \item \textbf{How robust is SNARE-TANNER?} (2021). Devised and demonstrated vulnerabilities for attackers to bypass detection in SNARE-TANNER framework, \href{https://drive.google.com/file/d/1-FuDy-8xTE2TCRVV2RDuusnhAiLdgMeO/view?usp=sharing}{[Link]}.
